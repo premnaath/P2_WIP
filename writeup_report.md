@@ -217,7 +217,7 @@ architecture.
 
 The original architecture is shown in Figure below,
 
-![Orignial Architecture][image2]
+![Orignial Architecture][image1]
 
 **Include architecture figure here**
 
