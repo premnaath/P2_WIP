@@ -211,15 +211,14 @@ stated in the course work).
 Here the information about the architecture is given. It was learnt that the
 main purpose of this architecture was to keep it simple and make processing
 efficient on GPU by using as less layers as possible in order to enable things
-running in real-time [@DeepLanes]. Noticably, the considered
+running in real-time [[@DeepLanes]]. Noticably, the considered
 architecture has fewer convolutions and fully connected layers than the Nvidia's
 architecture.
 
 The original architecture is shown in Figure below,
 
 ![Orignial Architecture][image1]
-
-**Include architecture figure here**
+**Original Architecture**
 
 Since the sizes of the images from the simulator is different from the ones
 used by Ford's architecture, some changes are made to the convolutional layers
@@ -290,7 +289,10 @@ not be enough to run the car completely on the track as the model is not trained
 for any recovery, if it deviates from the center of the track. For this purpose
 the images captured from the left and right cameras were used.
 
-The left and right camera images are shown in **Figure XX**
+The left and right camera images are shown in below.
+
+![Center][image2] ![Left][image4] ![Right][image6]
+**Images from center, left and right cameras respectively**
 
 The recorded steering angle is directly related to the center mounted camera.
 The left and right cameras perceive the same environment differently. In order
@@ -334,7 +336,8 @@ All available images were flipped along the vertical axis. Now the left turns
 recorded will correspond to right turns and hence the steering angle has to be
 negated correspondingly.
 
-**Add flipped images**
+![Center][image3] ![Left][image5] ![Right][image7]
+**Flipped images from center, left and right cameras respectively**
 
 #### 3.2.3. Training
 Now that a good set of data is available, the next step is to train the model
@@ -418,7 +421,8 @@ batch. At the end of each epoch, the MSE for the validation set is also
 calculated. The figure below shows the MSE performance of the trained model over
 epochs.
 
-**Include figure here**
+![Performance][image8]
+**MSE performance**
 
 Now the trained model is tested on the simulator. If the ego vehicle is seen
 to deviate from lane keeping, the location where that happens is recorded and
