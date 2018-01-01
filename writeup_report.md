@@ -309,7 +309,7 @@ used for deriving the correction factor based on the ego vehicle's speed.
 
 The formulas are stated as below,
 
-$$\omega = v / r$$
+![equation]($$\omega = v / r$$)
 $$Correction factor = \omega * d/dt$$
 
 where, $\omega$ is the angular velocity, $v$ is the ego's velocity, $r$ is the
